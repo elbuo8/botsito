@@ -3,6 +3,5 @@
   "hubot-diagnostics",
   "hubot-help",
   "hubot-shipit",
-  "hubot-redis-brain",
-  "hubot-keepalive"
+  "hubot-redis-brain"
 ]

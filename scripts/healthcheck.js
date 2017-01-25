@@ -12,6 +12,11 @@ const startTime = Date.now();
 
 module.exports = function healthcheck(robot) {
   robot.router.get('/health', (req, res) => {
-    return res.json({ uptime: ms(Date.now() - startTime) });
+    return res.json({
+      uptime: ms(Date.now() - startTime),
+      autoSave: robot.brain.autoSave
+    });
   });
+
+  robot.logger.debug('health endpoint mounted');
 }
