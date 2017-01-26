@@ -6,13 +6,15 @@
   "description": "Mentor bot",
   "scripts": {
     "start": "bin/hubot",
-    "deploy": "now -e LOG_KEY=@log_key -e HUBOT_LOG_LEVEL=debug -e NODE_ENV=production -e HUBOT_SLACK_TOKEN=@bot-slack-token -e REDIS_URL=@redis-uri"
+    "deploy": "now --docker -e LOG_KEY=@log_key -e HUBOT_LOG_LEVEL=debug -e NODE_ENV=production -e HUBOT_SLACK_TOKEN=@bot-slack-token -e REDIS_URL=@redis-uri"
   },
   "dependencies": {
     "cron": "^1.2.1",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-help": "^0.2.0",
+    "hubot-http-status": "^0.2.2",
+    "hubot-phrases": "^1.3.3",
     "hubot-plusplus": "^1.4.0",
     "hubot-redis-brain": "^0.0.3",
     "hubot-scripts": "^2.17.2",

@@ -1,7 +1,9 @@
 [
+  "hubot-redis-brain",
   "hubot-plusplus",
   "hubot-diagnostics",
   "hubot-help",
   "hubot-shipit",
-  "hubot-redis-brain"
+  "hubot-http-status",
+  "hubot-phrases"
 ]
