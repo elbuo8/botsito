@@ -6,9 +6,10 @@
   "description": "Mentor bot",
   "scripts": {
     "start": "bin/hubot",
-    "deploy": "now -e LOG_KEY=@log_key -e HUBOT_LOG_LEVEL=debug -e NODE_ENV=production -e HUBOT_SLACK_TOKEN=@bot-slack-token -e REDIS_URL=@redis-uri"
+    "deploy": "now --npm -e LOG_KEY=@log_key -e HUBOT_LOG_LEVEL=debug -e NODE_ENV=production -e HUBOT_SLACK_TOKEN=@bot-slack-token -e REDIS_URL=@redis-uri"
   },
   "dependencies": {
+    "cheerio": "^0.22.0",
     "cron": "^1.2.1",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
@@ -22,6 +23,7 @@
     "hubot-slack": "^4.3.1",
     "ms": "^0.7.2",
     "nightmare": "^2.9.1",
-    "now-logs": "^0.0.7"
+    "now-logs": "^0.0.7",
+    "request": "^2.79.0"
   }
 }
