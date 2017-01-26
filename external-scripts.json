@@ -4,6 +4,5 @@
   "hubot-diagnostics",
   "hubot-help",
   "hubot-shipit",
-  "hubot-http-status",
-  "hubot-phrases"
+  "hubot-http-status"
 ]
