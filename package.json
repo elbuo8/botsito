@@ -6,7 +6,7 @@
   "description": "Mentor bot",
   "scripts": {
     "start": "bin/hubot",
-    "deploy": "now --docker -e LOG_KEY=@log_key -e HUBOT_LOG_LEVEL=debug -e NODE_ENV=production -e HUBOT_SLACK_TOKEN=@bot-slack-token -e REDIS_URL=@redis-uri"
+    "deploy": "now -e LOG_KEY=@log_key -e HUBOT_LOG_LEVEL=debug -e NODE_ENV=production -e HUBOT_SLACK_TOKEN=@bot-slack-token -e REDIS_URL=@redis-uri"
   },
   "dependencies": {
     "cron": "^1.2.1",
