@@ -1,3 +1,19 @@
+// Description:
+//   Find nodejs documentation
+//
+// Commands:
+//   hubot node <package>
+//
+// Examples:
+//   hubot node http
+//
+// Dependencies:
+//   "request": "2.79.0"
+//   "cheerio": "0.22.0"
+//
+// Author:
+//   @elbuo8
+
 const request = require('request');
 const cheerio = require('cheerio');
 
