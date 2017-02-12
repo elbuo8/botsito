@@ -6,6 +6,7 @@
   "description": "Mentor bot",
   "scripts": {
     "start": "bin/hubot",
+    "dev": "bin/hubot.test",
     "deploy": "now --npm -e LOG_KEY=@log_key -e HUBOT_LOG_LEVEL=debug -e NODE_ENV=production -e HUBOT_SLACK_TOKEN=@bot-slack-token -e REDIS_URL=@redis-uri"
   },
   "dependencies": {
