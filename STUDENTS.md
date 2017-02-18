@@ -85,7 +85,9 @@ function a(botsito) {
 Interface in which `botsito` receives messages and acts upon them.
 
 Takes two parameters. Both are functions.
+
 First parameter function receives a single parameter called `msg`. It holds properties like `text` (the message posted) and `user` (the poster of the message). In this function you will determine if you will act upon the `msg` received. This function must return `true` or `false`.
+
 Second parameter function receives a single parameter called `response`. It holds the method `reply` which allows us to write to the channel. This is where you will put the bulk of your logic will live. This function will only be called if the first parameter function returned `true`.
 
 ```js
