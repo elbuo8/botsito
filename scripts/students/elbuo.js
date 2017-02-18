@@ -1,4 +1,4 @@
-module.exports = function elbuo(botsito) {
+function elbuo(botsito) {
   botsito.logger.info('elbuo was mounted');
 
   botsito.listen(function(msg) {
@@ -6,4 +6,6 @@ module.exports = function elbuo(botsito) {
   }, function(res) {
     return res.reply('PIEEEE TIMEEEE: ' + Math.PI);
   });
-};
+}
+
+module.exports = elbuo;
