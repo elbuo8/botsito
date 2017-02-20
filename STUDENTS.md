@@ -102,7 +102,7 @@ function a(botsito) {
   }
 
   function postBack(response) {
-    return res.reply('PI TIMEEEEE');
+    return response.reply('PI TIMEEEEE');
   }
 
   botsito.listen(validator, postBack);
