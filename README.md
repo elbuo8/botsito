@@ -1,6 +1,6 @@
 # Botsito extension
 
-Extending `botsito` is pretty straight forward. Declare a _named function_. Let's use `a` for the purposes of example.
+Extending `botsito` is pretty straight forward. Within the `scripts/students` directory, create a new file. In the file, declare a _named function_. Let's use `a` for the purposes of example.
 
 ```js
 function a() {
