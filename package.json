@@ -1,7 +1,6 @@
 {
   "name": "botsito",
   "version": "0.0.0",
-  "private": true,
   "author": "Yamil Asusta <hello@yamilasusta.com>",
   "description": "Mentor bot",
   "scripts": {
