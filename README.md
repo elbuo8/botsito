@@ -111,6 +111,8 @@ function a(botsito) {
 
 This function will listen for messages that include the phrase `pi time` and will reply with `PI TIMEEEEE` to the channel.
 
+The `response` object also contains additional information inside the `envelope` property. Try logging this property out to see what you learn.
+
 ## Exposing the function
 
 Once you are satisfied with your function, we need to make it readable. To do so, add the following line at the end of your file:

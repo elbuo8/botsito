@@ -1,9 +1,10 @@
-
 // Description:
 //   Respond with an adapter from a student
 //
 // Author:
 //   @elbuo8
+
+const fs = require('fs');
 
 function Botsito(robot) {
 
@@ -30,8 +31,10 @@ function Botsito(robot) {
   return this;
 }
 
-module.exports = function botistoProxy(robot) {
+module.exports = function botsitoProxy(robot) {
   const botsito = new Botsito(robot);
 
-  require('./students/elbuo')(botsito);
+  fs.readdirSync(`${__dirname}/students`).map((filename) => {
+    require(`${__dirname}/students/${filename}`)(botsito);
+  });
 };
