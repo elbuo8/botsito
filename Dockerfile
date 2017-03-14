@@ -1,6 +1,6 @@
 FROM node:7.4-alpine
 MAINTAINER @elbuo8
-LABEL name="preceptor"
+LABEL name="botsito"
 
 RUN mkdir /app
 WORKDIR /app
